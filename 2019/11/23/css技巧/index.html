@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hans" class="loading">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>css 技巧 - 土豆博客</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="css 内边框12345outline: 1px dashed redoutline-width:3pxoutline-offset:-30pxoutline-x:hiddenoutlint-y:h,"> 
+    <meta name="author" content="土豆"> 
+    <link rel="alternative" href="atom.xml" title="土豆博客" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="/css/diaspora.css">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+</head>
+</html>
+<body class="loading">
+    <span id="config-title" style="display:none">土豆博客</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">css 技巧</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class="main">
+        <h1 class="title">css 技巧</h1>
+        <div class="stuff">
+            <span>十一月 23, 2019</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <h2 id="css-内边框"><a href="#css-内边框" class="headerlink" title="css 内边框"></a>css 内边框</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">outline: 1px dashed red</span><br><span class="line">outline-width:3px</span><br><span class="line">outline-offset:-30px</span><br><span class="line">outline-x:hidden</span><br><span class="line">outlint-y:hidden</span><br></pre></td></tr></table></figure>
+<h2 id="图片大小"><a href="#图片大小" class="headerlink" title="图片大小"></a>图片大小</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">obgect-fit:fill 中文释义“填充”。默认值。替换内容拉伸填满整个content box, 不保证保持原有的比例。</span><br><span class="line">obgect-fit:contain 包含 保持原有尺寸元素类可能有空白</span><br><span class="line"> object-fit: cover 保证图片大于容器取中间部分</span><br><span class="line">bogect-fit:scale-down 降低原图大小</span><br></pre></td></tr></table></figure>
+<p>css 进度条(内边框圆角必须配合边框圆角)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">background: linear-gradient(60deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 10px)</span><br><span class="line">border-radius:8px</span><br><span class="line">background-size:40 100%</span><br><span class="line">box-shadow:0 0 0 10px red</span><br></pre></td></tr></table></figure>
+<h2 id="折角"><a href="#折角" class="headerlink" title="折角"></a>折角</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">width: 6rem</span><br><span class="line"> height: 5rem</span><br><span class="line"> background: linear-gradient(to left bottom, transparent 50%, rgba(0, 0, 0, 0.2) 0) no-repeat 100% 0 / 1.5em 1.5em, linear-gradient(-135deg, transparent 1em, #06c 0)</span><br></pre></td></tr></table></figure>
+<h2 id="css-rem"><a href="#css-rem" class="headerlink" title="css rem"></a>css rem</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> html &#123;</span><br><span class="line"> font-size: calc(100vw / 3.75);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">body &#123;</span><br><span class="line">  font-size: .14rem;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="css-计算属性"><a href="#css-计算属性" class="headerlink" title="css 计算属性"></a>css 计算属性</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line"> &lt;span&gt;&lt;/span&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">div&#123;</span><br><span class="line">  counter-reset: row //包含</span><br><span class="line">&#125;</span><br><span class="line">span&#123;</span><br><span class="line">    counter-increment: row //计算</span><br><span class="line">&#125;</span><br><span class="line">span：before&#123;</span><br><span class="line"> content: counter(row)//显示</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="display-grid-网格"><a href="#display-grid-网格" class="headerlink" title="display: grid 网格"></a>display: grid 网格</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">display: grid</span><br><span class="line">  grid-template-columns: repeat(auto-fill, 100px) // 宽 第一个代表几个元素第二个地表宽度 也可用%分比 auto-fill几个自动自动填充 1fr每个等分 auto宽度自适应  [c1]名字</span><br><span class="line">  grid-template-rows: repeat(3, 100px) // 高</span><br><span class="line">  grid-gap: 30px 30px // 下和右的间距</span><br><span class="line">  // grid-auto-flow: row //排序 row是横在排序 column竖着排序  剩下的位置dense补位</span><br><span class="line">  // justify-items: stretch // 水平居中 start靠左 end靠右 center居中 stretch两边</span><br><span class="line">  // align-items: center // 上下居中</span><br></pre></td></tr></table></figure>
+<h2 id="text-aling-last-justify-文字两边对齐"><a href="#text-aling-last-justify-文字两边对齐" class="headerlink" title="text-aling-last:justify 文字两边对齐"></a>text-aling-last:justify 文字两边对齐</h2><h2 id="ont-去除无用属性"><a href="#ont-去除无用属性" class="headerlink" title=":ont()去除无用属性"></a>:ont()去除无用属性</h2><h2 id="object-fit-cover-contain-fill-scale-down-图片规定图像大小"><a href="#object-fit-cover-contain-fill-scale-down-图片规定图像大小" class="headerlink" title="object-fit: cover contain fill scale-down 图片规定图像大小"></a>object-fit: cover contain fill scale-down 图片规定图像大小</h2><h2 id="ios-body-不会滚动"><a href="#ios-body-不会滚动" class="headerlink" title="ios body 不会滚动"></a>ios body 不会滚动</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    -webkit-overflow-scrolling: touch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="valid-和-invalid-表单校验"><a href="#valid-和-invalid-表单校验" class="headerlink" title=":valid 和 : invalid 表单校验"></a>:valid 和 : invalid 表单校验</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;text&quot; placeholder=&quot;请输入你的名字(1到10个中文)&quot; pattern=&quot;^[\u4e00-\u9fa5]&#123;1,10&#125;$&quot; required&gt;</span><br><span class="line"></span><br><span class="line">input,</span><br><span class="line">	textarea &#123;</span><br><span class="line"></span><br><span class="line">		transition: all 300ms;</span><br><span class="line">		&amp;:valid &#123;</span><br><span class="line">			border-color: #3c9;</span><br><span class="line">			box-shadow: inset 5px 0 0#3c9;</span><br><span class="line">		&#125;</span><br><span class="line">		&amp;:invalid &#123;</span><br><span class="line">			border-color: #f66;</span><br><span class="line">			box-shadow: inset 5px 0 0 #f66;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="css-input-焦点事件"><a href="#css-input-焦点事件" class="headerlink" title="css input 焦点事件"></a>css input 焦点事件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"> &lt;input</span><br><span class="line">        type=&quot;text&quot;</span><br><span class="line">        placeholder=&quot;请输入手机或邮箱&quot;</span><br><span class="line">        pattern=&quot;^1[3456789]\d&#123;9&#125;$|^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$&quot;</span><br><span class="line">        required</span><br><span class="line">      /&gt;</span><br><span class="line">.inpux &#123;</span><br><span class="line">  font-size: 0.2rem</span><br><span class="line">  margin-bottom: 2rem</span><br><span class="line">  input:focus-within &#123;</span><br><span class="line">    background: red</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="css-星星评价效果"><a href="#css-星星评价效果" class="headerlink" title="css 星星评价效果"></a>css 星星评价效果</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;xing&quot;&gt;</span><br><span class="line">      &lt;input type=&quot;radio&quot; name=&quot;reat&quot; /&gt;</span><br><span class="line">      &lt;input type=&quot;radio&quot; name=&quot;reat&quot; /&gt;</span><br><span class="line">      &lt;input type=&quot;radio&quot; name=&quot;reat&quot; /&gt;</span><br><span class="line">      &lt;input type=&quot;radio&quot; name=&quot;reat&quot; /&gt;</span><br><span class="line">      &lt;input type=&quot;radio&quot; name=&quot;reat&quot; /&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">.xing &#123;</span><br><span class="line">  display: flex</span><br><span class="line">  margin-bottom: 30px</span><br><span class="line">  flex-direction: row-reverse</span><br><span class="line">  input &#123;</span><br><span class="line">    width: 30px</span><br><span class="line">    height: 30px</span><br><span class="line">    &amp;::after &#123;</span><br><span class="line">      color: #66f</span><br><span class="line">      content: &apos;☆&apos;</span><br><span class="line">      transition: all 300ms</span><br><span class="line">    &#125;</span><br><span class="line">    &amp;:hover &#123;</span><br><span class="line">      transform: scale(1.2)</span><br><span class="line">    &#125;</span><br><span class="line">    &amp;:checked, &amp;:hover &#123;</span><br><span class="line">      &amp;::after, &amp; ~ input::after &#123;</span><br><span class="line">        color: #f66</span><br><span class="line">        content: &apos;★&apos;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title="0" data-url="http://link.hhtjim.com/163/5146554.mp3"></li>
+                        
+                    
+                        
+                            <li title="1" data-url="http://link.hhtjim.com/qq/001faIUs4M2zna.mp3"></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link" data-ae="false" data-ci="" data-cs="" data-r="" data-o="" data-a="" data-d="false">查看评论</div>
+
+
+    </div>
+    
+        <div class="side">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#css-内边框"><span class="toc-number">1.</span> <span class="toc-text">css 内边框</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图片大小"><span class="toc-number">2.</span> <span class="toc-text">图片大小</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#折角"><span class="toc-number">3.</span> <span class="toc-text">折角</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#css-rem"><span class="toc-number">4.</span> <span class="toc-text">css rem</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#css-计算属性"><span class="toc-number">5.</span> <span class="toc-text">css 计算属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#display-grid-网格"><span class="toc-number">6.</span> <span class="toc-text">display: grid 网格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#text-aling-last-justify-文字两边对齐"><span class="toc-number">7.</span> <span class="toc-text">text-aling-last:justify 文字两边对齐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ont-去除无用属性"><span class="toc-number">8.</span> <span class="toc-text">:ont()去除无用属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#object-fit-cover-contain-fill-scale-down-图片规定图像大小"><span class="toc-number">9.</span> <span class="toc-text">object-fit: cover contain fill scale-down 图片规定图像大小</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ios-body-不会滚动"><span class="toc-number">10.</span> <span class="toc-text">ios body 不会滚动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#valid-和-invalid-表单校验"><span class="toc-number">11.</span> <span class="toc-text">:valid 和 : invalid 表单校验</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#css-input-焦点事件"><span class="toc-number">12.</span> <span class="toc-text">css input 焦点事件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#css-星星评价效果"><span class="toc-number">13.</span> <span class="toc-text">css 星星评价效果</span></a></li></ol>
+        </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>

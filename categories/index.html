@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hans" class="loading">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>土豆博客</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="Fechin,"> 
+    
+    <meta name="author" content="土豆"> 
+    <link rel="alternative" href="atom.xml" title="土豆博客" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="/css/diaspora.css">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+</head>
+</html>
+<body class="loading">
+    <span id="config-title" style="display:none">土豆博客</span>
+    <div id="loader"></div>
+    <div id="single" class="page">
+    <div id="top">
+        <a class="icon-left image-icon" href="javascript:history.back()"></a>
+    </div>
+    <div class="section">
+        <div class="article">
+            <div class="main">
+                <div class="content">
+                
+                        <p>#vue.js 笔记<br><strong>命令行</strong></p>
+<blockquote>
+<p>全局安装 <code>npm install --global vue-cli</code><br>创建模版 <code>vue init webpack my</code><br>进入文件夹 <code>cd my</code><br>清理 <code>cls</code><br>初始化 <code>npm i</code><br>启动 <code>npm run dev</code><br>打包 <code>npm run build</code><br>删除依赖包 <code>npm uninstall 包名</code> &gt; <strong>配置环境变量</strong> <code>如果vue 创建模版不生效就需要配置</code></p>
+</blockquote>
+<p><img src="/categories/vue-js/Image.png" alt="Alt text"></p>
+<p><strong>指令</strong></p>
+<blockquote>
+<p>双向数据绑定 <code>v-model</code><br>循环 <code>v-fofr</code><br>判断 <code>v-if</code><br>显示 <code>v-show</code><br>v-if 条件不成立时执行<code>v-else</code><br>表示多次，在 v-if 和 v-else 中间<code>v-else-if</code></p>
+</blockquote>
+<p><strong>路由跳转 带参数</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">## 跳转带参数</span><br><span class="line"></span><br><span class="line">&lt;router-link :to=&quot;&#123;name:&apos;zhuCe&apos;,params:&#123;name:&apos;00&apos;&#125;&#125;&quot;&gt;ss&lt;/router-link&gt;</span><br><span class="line"></span><br><span class="line">   this.$router.push(&#123;</span><br><span class="line">        name:&apos;zhuCe&apos;,</span><br><span class="line">        params:&#123;</span><br><span class="line">          name:&quot;00&quot;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;)</span><br><span class="line"></span><br><span class="line">## 接收参数</span><br><span class="line"></span><br><span class="line">    let routerParams = this.$route.params;</span><br><span class="line">    //index.js页面需要设置/:id</span><br></pre></td></tr></table></figure>
+<p>#vue 插件</p>
+<p><strong>调试插件</strong></p>
+<blockquote>
+<p>npm install vconsole 下载</p>
+</blockquote>
+<pre><code>  import VConsole from &apos;vconsole/dist/vconsole.min.js&apos; //import vconsole
+let vConsole = new VConsole()  引入
+</code></pre><p><a href="https://blog.csdn.net/xiaogezl/article/details/70156500" target="_blank" rel="noopener"><strong>图片压缩上传</strong></a></p>
+<blockquote>
+<p>npm install exif-js –save</p>
+</blockquote>
+<pre><code>import Exif from &apos;exif-js&apos;
+</code></pre><p><a href="https://blog.csdn.net/zhangswu/article/details/80280853" target="_blank" rel="noopener"><strong>二维码生成</strong></a></p>
+<blockquote>
+<p>cnpm install qrcodejs2 –save</p>
+</blockquote>
+<pre><code>import  QRcode form &apos;qrcodejs2&apos;
+</code></pre><p><a href="http://www.mescroll.com/api.html#NPM" target="_blank" rel="noopener"><strong>上拉加载下拉刷新</strong></a></p>
+<blockquote>
+<p>npm install –save mescroll.js</p>
+</blockquote>
+<pre><code>import MeScroll from &apos;mescroll.js&apos;
+ import &apos;mescroll.js/mescroll.min.css&apos;
+</code></pre><p><a href="https://github.com/ustbhuangyi/better-scroll" target="_blank" rel="noopener"><strong>滑动效果</strong></a></p>
+<blockquote>
+<p>npm install @types/better-scroll -D</p>
+</blockquote>
+<pre><code>import BScroll from &apos;better-scroll&apos;;
+</code></pre><p><a href="https://www.cnblogs.com/wangyunhui/p/8178436.html" target="_blank" rel="noopener"><strong>微信动态设置标题</strong></a></p>
+<blockquote>
+<p>cnpm install vue-wechat-title –save</p>
+</blockquote>
+<pre><code>Vue.use(require(&apos;vue-wechat-title&apos;))
+&lt;div v-wechat-title=&quot;$route.name&quot;&gt;&lt;/div&gt;
+</code></pre><p>#获取 dom 节点</p>
+<p><div class="placeholder" ref="bbt"></div><br>this.\$refs.bbt<br>bbt ref 名字</p>
+<blockquote>
+<p>v-html v-text v-style v-class<br>app(e){ console.log(e.srcElement.style.自定义属性名字) } 可以获取当前的 dom 对象</p>
+<hr>
+</blockquote>
+<p>#vue 生命周期</p>
+<blockquote>
+<p>创建实力之前 beforeCreate<br>实力创建完后执行 created<br>编译好 html 挂载在 dom 上 baforeMount<br>变异好挂载页面完成后 mounted<br>实力销毁之前执行 beforeDestroy<br>实力销毁完成后执行 destroyed</p>
+</blockquote>
+<p>#vuex 生命周期</p>
+<blockquote>
+<p>安装 npm install vuex –save-dev</p>
+</blockquote>
+
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
