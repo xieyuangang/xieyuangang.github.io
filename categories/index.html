@@ -46,7 +46,7 @@
 <p><img src="/categories/vue-js/Image.png" alt="Alt text"></p>
 <p><strong>指令</strong></p>
 <blockquote>
-<p>双向数据绑定 <code>v-model</code><br>循环 <code>v-fofr</code><br>判断 <code>v-if</code><br>显示 <code>v-show</code><br>v-if 条件不成立时执行<code>v-else</code><br>表示多次，在 v-if 和 v-else 中间<code>v-else-if</code></p>
+<p>双向数据绑定 <code>v-model</code><br>循环 <code>v-for</code><br>判断 <code>v-if</code><br>显示 <code>v-show</code><br>v-if 条件不成立时执行<code>v-else</code><br>表示多次，在 v-if 和 v-else 中间<code>v-else-if</code></p>
 </blockquote>
 <p><strong>路由跳转 带参数</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">## 跳转带参数</span><br><span class="line"></span><br><span class="line">&lt;router-link :to=&quot;&#123;name:&apos;zhuCe&apos;,params:&#123;name:&apos;00&apos;&#125;&#125;&quot;&gt;ss&lt;/router-link&gt;</span><br><span class="line"></span><br><span class="line">   this.$router.push(&#123;</span><br><span class="line">        name:&apos;zhuCe&apos;,</span><br><span class="line">        params:&#123;</span><br><span class="line">          name:&quot;00&quot;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;)</span><br><span class="line"></span><br><span class="line">## 接收参数</span><br><span class="line"></span><br><span class="line">    let routerParams = this.$route.params;</span><br><span class="line">    //index.js页面需要设置/:id</span><br></pre></td></tr></table></figure>
@@ -92,7 +92,7 @@ let vConsole = new VConsole()  引入
 </blockquote>
 <p>#vue 生命周期</p>
 <blockquote>
-<p>创建实力之前 beforeCreate<br>实力创建完后执行 created<br>编译好 html 挂载在 dom 上 baforeMount<br>变异好挂载页面完成后 mounted<br>实力销毁之前执行 beforeDestroy<br>实力销毁完成后执行 destroyed</p>
+<p>创建实力之前 beforeCreate<br>实力创建完后执行 created<br>编译好 html 挂载在 dom 上 beforeMount<br>变异好挂载页面完成后 mounted<br>实力销毁之前执行 beforeDestroy<br>实力销毁完成后执行 destroyed</p>
 </blockquote>
 <p>#vuex 生命周期</p>
 <blockquote>
